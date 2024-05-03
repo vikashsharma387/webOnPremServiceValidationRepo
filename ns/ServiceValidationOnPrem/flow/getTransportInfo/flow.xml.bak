@@ -96,6 +96,9 @@
 
 <MAPCOPY FROM="/transport;4;0;pub.flow:transportInfo" TO="/transportInfo;2;0">
 </MAPCOPY>
+
+<MAPDELETE FIELD="/transport;4;0;pub.flow:transportInfo">
+</MAPDELETE>
 </MAP>
 </INVOKE>
 </FLOW>
