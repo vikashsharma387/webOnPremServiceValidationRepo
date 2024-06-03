@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="record" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="node_nsName">ServiceValidationOnPrem.schema:docTypeRef_tns_Items</value>
+    <value name="node_pkg">ServiceValidationOnPrem</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <value name="originURI">file:///C:\Users\viksh\Downloads\purchaseOrder.xsd</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">tns:item</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">1</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">false</value>
+        <value name="field_xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+        <value name="form_qualified">true</value>
+        <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
+        <array name="rec_fields" type="record" depth="1">
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">field</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">@partNum</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <value name="field_opt">true</value>
+            <record name="field_content_type" javaclass="com.wm.util.Values">
+              <value name="contentType">1</value>
+              <value name="internalType">reference</value>
+              <value name="dataTypeVersion">dtVersion2</value>
+              <array name="targetNames" type="record" depth="1">
+                <record javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                  <value name="ncName">SKU</value>
+                </record>
+              </array>
+            </record>
+            <value name="nillable">true</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">false</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">record</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">tns:productName</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <record name="field_content_type" javaclass="com.wm.util.Values">
+              <value name="contentType">1</value>
+              <value name="internalType">reference</value>
+              <value name="dataTypeVersion">dtVersion2</value>
+              <array name="targetNames" type="record" depth="1">
+                <record javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                  <value name="ncName">string</value>
+                </record>
+              </array>
+            </record>
+            <value name="nillable">false</value>
+            <value name="field_xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+            <value name="form_qualified">true</value>
+            <value name="is_global">false</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">record</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">tns:quantity</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <record name="field_content_type" javaclass="com.wm.util.Values">
+              <record name="minInclusive" javaclass="com.wm.util.Values">
+                <value name="facetFixed">false</value>
+                <value name="primitiveType">4</value>
+                <value name="lexRep">1</value>
+              </record>
+              <record name="maxExclusive" javaclass="com.wm.util.Values">
+                <value name="facetFixed">false</value>
+                <value name="primitiveType">4</value>
+                <value name="lexRep">100</value>
+              </record>
+              <value name="contentType">1</value>
+              <value name="internalType">instance</value>
+              <value name="ct_class">com.wm.lang.schema.datatypev2.WmDecimal</value>
+              <value name="name">positiveInteger</value>
+              <array name="parent-ancestors" type="record" depth="1">
+                <record javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                  <value name="ncName">anySimpleType</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                  <value name="ncName">decimal</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                  <value name="ncName">integer</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                  <value name="ncName">nonNegativeInteger</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                  <value name="ncName">anyType</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                  <value name="ncName">positiveInteger</value>
+                </record>
+              </array>
+              <record name="baseType" javaclass="com.wm.util.Values">
+                <record name="minInclusive" javaclass="com.wm.util.Values">
+                  <value name="facetFixed">false</value>
+                  <value name="primitiveType">4</value>
+                  <value name="lexRep">1</value>
+                </record>
+                <record name="fractionDigits" javaclass="com.wm.util.Values">
+                  <record name="FacetFDCValue" javaclass="com.wm.util.Values">
+                    <value name="cDecimalValue">0</value>
+                  </record>
+                  <value name="facetFixed">true</value>
+                </record>
+                <record name="whiteSpace" javaclass="com.wm.util.Values">
+                  <record name="FacetWSCValue" javaclass="com.wm.util.Values">
+                    <value name="cDecimalValue">1</value>
+                  </record>
+                  <value name="facetFixed">true</value>
+                </record>
+                <value name="contentType">1</value>
+                <value name="internalType">instance</value>
+                <value name="ct_class">com.wm.lang.schema.datatypev2.WmDecimal</value>
+                <value name="dataTypeVersion">dtVersion2</value>
+              </record>
+              <value name="dataTypeVersion">dtVersion2</value>
+            </record>
+            <value name="nillable">false</value>
+            <value name="field_xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+            <value name="form_qualified">true</value>
+            <value name="is_global">false</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">record</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">tns:USPrice</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <record name="field_content_type" javaclass="com.wm.util.Values">
+              <value name="contentType">1</value>
+              <value name="internalType">reference</value>
+              <value name="dataTypeVersion">dtVersion2</value>
+              <array name="targetNames" type="record" depth="1">
+                <record javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                  <value name="ncName">decimal</value>
+                </record>
+              </array>
+            </record>
+            <value name="nillable">false</value>
+            <value name="field_xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+            <value name="form_qualified">true</value>
+            <value name="is_global">false</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">record</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">tns:comment</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <record name="field_content_type" javaclass="com.wm.util.Values">
+              <value name="contentType">1</value>
+              <value name="internalType">reference</value>
+              <value name="dataTypeVersion">dtVersion2</value>
+              <array name="targetNames" type="record" depth="1">
+                <record javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                  <value name="ncName">string</value>
+                </record>
+              </array>
+            </record>
+            <value name="nillable">false</value>
+            <value name="field_xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">true</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">record</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">tns:shipDate</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <value name="field_opt">true</value>
+            <record name="field_content_type" javaclass="com.wm.util.Values">
+              <value name="contentType">1</value>
+              <value name="internalType">reference</value>
+              <value name="dataTypeVersion">dtVersion2</value>
+              <array name="targetNames" type="record" depth="1">
+                <record javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                  <value name="ncName">date</value>
+                </record>
+              </array>
+            </record>
+            <value name="nillable">false</value>
+            <value name="field_xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+            <value name="form_qualified">true</value>
+            <value name="is_global">false</value>
+          </record>
+        </array>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+      </record>
+    </array>
+    <record name="schemaType" javaclass="com.wm.util.Values">
+      <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+      <value name="ncName">Items</value>
+    </record>
+    <value name="modifiable">false</value>
+  </record>
+</Values>

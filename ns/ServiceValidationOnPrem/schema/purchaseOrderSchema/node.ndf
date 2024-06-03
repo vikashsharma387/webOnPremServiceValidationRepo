@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="schema" javaclass="com.wm.util.Values">
+    <value name="node_type">schema</value>
+    <value name="node_subtype">unknown</value>
+    <value name="node_nsName">ServiceValidationOnPrem.schema:purchaseOrderSchema</value>
+    <value name="node_pkg">ServiceValidationOnPrem</value>
+    <value name="is_public">false</value>
+    <value name="contentType">3</value>
+    <value name="targetNamespace">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+    <record name="attributes" javaclass="com.wm.util.Values">
+      <list name="table">
+      </list>
+    </record>
+    <record name="elements" javaclass="com.wm.util.Values">
+      <list name="table">
+        <record javaclass="com.wm.util.Values">
+          <value name="tagType">element</value>
+          <value name="name">purchaseOrder</value>
+          <record name="type" javaclass="com.wm.util.Values">
+            <value name="contentType">2</value>
+            <value name="internalType">reference</value>
+            <record name="targetName" javaclass="com.wm.util.Values">
+              <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+              <value name="ncName">PurchaseOrderType</value>
+            </record>
+          </record>
+          <value name="internalType">instance</value>
+          <value name="classname">com.wm.lang.schema.WmElement</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="tagType">element</value>
+          <value name="name">comment</value>
+          <record name="type" javaclass="com.wm.util.Values">
+            <value name="contentType">1</value>
+            <value name="internalType">reference</value>
+            <value name="dataTypeVersion">dtVersion2</value>
+            <array name="targetNames" type="record" depth="1">
+              <record javaclass="com.wm.util.Values">
+                <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                <value name="ncName">string</value>
+              </record>
+            </array>
+          </record>
+          <value name="internalType">instance</value>
+          <value name="classname">com.wm.lang.schema.WmElement</value>
+        </record>
+      </list>
+    </record>
+    <record name="types" javaclass="com.wm.util.Values">
+      <list name="table">
+        <record javaclass="com.wm.util.Values">
+          <value name="contentType">2</value>
+          <value name="internalType">instance</value>
+          <value name="name">PurchaseOrderType</value>
+          <list name="elements">
+            <record javaclass="com.wm.util.Values">
+              <value name="tagType">element</value>
+              <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+              <value name="name">shipTo</value>
+              <record name="type" javaclass="com.wm.util.Values">
+                <value name="contentType">2</value>
+                <value name="internalType">reference</value>
+                <record name="targetName" javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                  <value name="ncName">USAddress</value>
+                </record>
+              </record>
+              <value name="form">true</value>
+              <value name="internalType">instance</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="tagType">element</value>
+              <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+              <value name="name">billTo</value>
+              <record name="type" javaclass="com.wm.util.Values">
+                <value name="contentType">2</value>
+                <value name="internalType">reference</value>
+                <record name="targetName" javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                  <value name="ncName">USAddress</value>
+                </record>
+              </record>
+              <value name="form">true</value>
+              <value name="internalType">instance</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="tagType">element</value>
+              <value name="internalType">reference</value>
+              <record name="targetName" javaclass="com.wm.util.Values">
+                <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                <value name="ncName">comment</value>
+              </record>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="tagType">element</value>
+              <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+              <value name="name">items</value>
+              <record name="type" javaclass="com.wm.util.Values">
+                <value name="contentType">2</value>
+                <value name="internalType">reference</value>
+                <record name="targetName" javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                  <value name="ncName">Items</value>
+                </record>
+              </record>
+              <value name="form">true</value>
+              <value name="internalType">instance</value>
+            </record>
+          </list>
+          <list name="attributes">
+            <record javaclass="com.wm.util.Values">
+              <value name="tagType">attribute</value>
+              <value name="name">orderDate</value>
+              <record name="type" javaclass="com.wm.util.Values">
+                <value name="contentType">1</value>
+                <value name="internalType">reference</value>
+                <value name="dataTypeVersion">dtVersion2</value>
+                <array name="targetNames" type="record" depth="1">
+                  <record javaclass="com.wm.util.Values">
+                    <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                    <value name="ncName">date</value>
+                  </record>
+                </array>
+              </record>
+              <value name="required">false</value>
+              <value name="internalType">instance</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="tagType">attribute</value>
+              <value name="name">confirmDate</value>
+              <record name="type" javaclass="com.wm.util.Values">
+                <value name="contentType">1</value>
+                <value name="internalType">reference</value>
+                <value name="dataTypeVersion">dtVersion2</value>
+                <array name="targetNames" type="record" depth="1">
+                  <record javaclass="com.wm.util.Values">
+                    <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                    <value name="ncName">date</value>
+                  </record>
+                </array>
+              </record>
+              <value name="required">true</value>
+              <value name="internalType">instance</value>
+            </record>
+          </list>
+          <record name="contentModel" javaclass="com.wm.util.Values">
+            <record name="symbol" javaclass="com.wm.util.Values">
+              <value name="ncName">$$SEQUENCE</value>
+            </record>
+            <value name="minOccurs">1</value>
+            <value name="maxOccurs">1</value>
+            <value name="modelType">sequence</value>
+            <list name="children">
+              <record javaclass="com.wm.util.Values">
+                <record name="symbol" javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                  <value name="ncName">shipTo</value>
+                </record>
+                <value name="minOccurs">1</value>
+                <value name="maxOccurs">1</value>
+                <value name="modelType">simple</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <record name="symbol" javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                  <value name="ncName">billTo</value>
+                </record>
+                <value name="minOccurs">1</value>
+                <value name="maxOccurs">1</value>
+                <value name="modelType">simple</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <record name="symbol" javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                  <value name="ncName">comment</value>
+                </record>
+                <value name="minOccurs">0</value>
+                <value name="maxOccurs">1</value>
+                <value name="modelType">simple</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <record name="symbol" javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                  <value name="ncName">items</value>
+                </record>
+                <value name="minOccurs">1</value>
+                <value name="maxOccurs">1</value>
+                <value name="modelType">simple</value>
+              </record>
+            </list>
+          </record>
+          <array name="parent-ancestors" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">anyType</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+              <value name="ncName">PurchaseOrderType</value>
+            </record>
+          </array>
+          <value name="classname">com.wm.lang.schema.WmComplexType</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <record name="pattern" javaclass="com.wm.util.Values">
+            <array name="pattern" type="value" depth="1">
+              <value>\d{3}\w{3}</value>
+            </array>
+          </record>
+          <value name="contentType">1</value>
+          <value name="internalType">instance</value>
+          <value name="ct_class">com.wm.lang.schema.datatypev2.WmString</value>
+          <value name="name">SKU</value>
+          <array name="parent-ancestors" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">anySimpleType</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">anyType</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">string</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+              <value name="ncName">SKU</value>
+            </record>
+          </array>
+          <record name="baseType" javaclass="com.wm.util.Values">
+            <record name="whiteSpace" javaclass="com.wm.util.Values">
+              <record name="FacetWSCValue" javaclass="com.wm.util.Values">
+                <value name="cDecimalValue">3</value>
+              </record>
+              <value name="facetFixed">false</value>
+            </record>
+            <value name="contentType">1</value>
+            <value name="internalType">instance</value>
+            <value name="ct_class">com.wm.lang.schema.datatypev2.WmString</value>
+            <value name="dataTypeVersion">dtVersion2</value>
+          </record>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <value name="classname">com.wm.lang.schema.datatypev2.WmString</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="contentType">2</value>
+          <value name="internalType">instance</value>
+          <value name="name">Items</value>
+          <list name="elements">
+            <record javaclass="com.wm.util.Values">
+              <value name="tagType">element</value>
+              <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+              <value name="name">item</value>
+              <record name="type" javaclass="com.wm.util.Values">
+                <value name="contentType">2</value>
+                <value name="internalType">instance</value>
+                <list name="elements">
+                  <record javaclass="com.wm.util.Values">
+                    <value name="tagType">element</value>
+                    <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                    <value name="name">productName</value>
+                    <record name="type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                          <value name="ncName">string</value>
+                        </record>
+                      </array>
+                    </record>
+                    <value name="form">true</value>
+                    <value name="internalType">instance</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="tagType">element</value>
+                    <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                    <value name="name">quantity</value>
+                    <record name="type" javaclass="com.wm.util.Values">
+                      <record name="minInclusive" javaclass="com.wm.util.Values">
+                        <value name="facetFixed">false</value>
+                        <value name="primitiveType">4</value>
+                        <value name="lexRep">1</value>
+                      </record>
+                      <record name="maxExclusive" javaclass="com.wm.util.Values">
+                        <value name="facetFixed">false</value>
+                        <value name="primitiveType">4</value>
+                        <value name="lexRep">100</value>
+                      </record>
+                      <value name="contentType">1</value>
+                      <value name="internalType">instance</value>
+                      <value name="ct_class">com.wm.lang.schema.datatypev2.WmDecimal</value>
+                      <value name="name">positiveInteger</value>
+                      <array name="parent-ancestors" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                          <value name="ncName">anySimpleType</value>
+                        </record>
+                        <record javaclass="com.wm.util.Values">
+                          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                          <value name="ncName">decimal</value>
+                        </record>
+                        <record javaclass="com.wm.util.Values">
+                          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                          <value name="ncName">integer</value>
+                        </record>
+                        <record javaclass="com.wm.util.Values">
+                          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                          <value name="ncName">nonNegativeInteger</value>
+                        </record>
+                        <record javaclass="com.wm.util.Values">
+                          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                          <value name="ncName">anyType</value>
+                        </record>
+                        <record javaclass="com.wm.util.Values">
+                          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                          <value name="ncName">positiveInteger</value>
+                        </record>
+                      </array>
+                      <record name="baseType" javaclass="com.wm.util.Values">
+                        <record name="minInclusive" javaclass="com.wm.util.Values">
+                          <value name="facetFixed">false</value>
+                          <value name="primitiveType">4</value>
+                          <value name="lexRep">1</value>
+                        </record>
+                        <record name="fractionDigits" javaclass="com.wm.util.Values">
+                          <record name="FacetFDCValue" javaclass="com.wm.util.Values">
+                            <value name="cDecimalValue">0</value>
+                          </record>
+                          <value name="facetFixed">true</value>
+                        </record>
+                        <record name="whiteSpace" javaclass="com.wm.util.Values">
+                          <record name="FacetWSCValue" javaclass="com.wm.util.Values">
+                            <value name="cDecimalValue">1</value>
+                          </record>
+                          <value name="facetFixed">true</value>
+                        </record>
+                        <value name="contentType">1</value>
+                        <value name="internalType">instance</value>
+                        <value name="ct_class">com.wm.lang.schema.datatypev2.WmDecimal</value>
+                        <value name="dataTypeVersion">dtVersion2</value>
+                      </record>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                    </record>
+                    <value name="form">true</value>
+                    <value name="internalType">instance</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="tagType">element</value>
+                    <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                    <value name="name">USPrice</value>
+                    <record name="type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                          <value name="ncName">decimal</value>
+                        </record>
+                      </array>
+                    </record>
+                    <value name="form">true</value>
+                    <value name="internalType">instance</value>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="tagType">element</value>
+                    <value name="internalType">reference</value>
+                    <record name="targetName" javaclass="com.wm.util.Values">
+                      <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                      <value name="ncName">comment</value>
+                    </record>
+                  </record>
+                  <record javaclass="com.wm.util.Values">
+                    <value name="tagType">element</value>
+                    <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                    <value name="name">shipDate</value>
+                    <record name="type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                          <value name="ncName">date</value>
+                        </record>
+                      </array>
+                    </record>
+                    <value name="form">true</value>
+                    <value name="internalType">instance</value>
+                  </record>
+                </list>
+                <list name="attributes">
+                  <record javaclass="com.wm.util.Values">
+                    <value name="tagType">attribute</value>
+                    <value name="name">partNum</value>
+                    <record name="type" javaclass="com.wm.util.Values">
+                      <value name="contentType">1</value>
+                      <value name="internalType">reference</value>
+                      <value name="dataTypeVersion">dtVersion2</value>
+                      <array name="targetNames" type="record" depth="1">
+                        <record javaclass="com.wm.util.Values">
+                          <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                          <value name="ncName">SKU</value>
+                        </record>
+                      </array>
+                    </record>
+                    <value name="required">false</value>
+                    <value name="internalType">instance</value>
+                  </record>
+                </list>
+                <record name="contentModel" javaclass="com.wm.util.Values">
+                  <record name="symbol" javaclass="com.wm.util.Values">
+                    <value name="ncName">$$SEQUENCE</value>
+                  </record>
+                  <value name="minOccurs">1</value>
+                  <value name="maxOccurs">1</value>
+                  <value name="modelType">sequence</value>
+                  <list name="children">
+                    <record javaclass="com.wm.util.Values">
+                      <record name="symbol" javaclass="com.wm.util.Values">
+                        <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                        <value name="ncName">productName</value>
+                      </record>
+                      <value name="minOccurs">1</value>
+                      <value name="maxOccurs">1</value>
+                      <value name="modelType">simple</value>
+                    </record>
+                    <record javaclass="com.wm.util.Values">
+                      <record name="symbol" javaclass="com.wm.util.Values">
+                        <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                        <value name="ncName">quantity</value>
+                      </record>
+                      <value name="minOccurs">1</value>
+                      <value name="maxOccurs">1</value>
+                      <value name="modelType">simple</value>
+                    </record>
+                    <record javaclass="com.wm.util.Values">
+                      <record name="symbol" javaclass="com.wm.util.Values">
+                        <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                        <value name="ncName">USPrice</value>
+                      </record>
+                      <value name="minOccurs">1</value>
+                      <value name="maxOccurs">1</value>
+                      <value name="modelType">simple</value>
+                    </record>
+                    <record javaclass="com.wm.util.Values">
+                      <record name="symbol" javaclass="com.wm.util.Values">
+                        <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                        <value name="ncName">comment</value>
+                      </record>
+                      <value name="minOccurs">1</value>
+                      <value name="maxOccurs">1</value>
+                      <value name="modelType">simple</value>
+                    </record>
+                    <record javaclass="com.wm.util.Values">
+                      <record name="symbol" javaclass="com.wm.util.Values">
+                        <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                        <value name="ncName">shipDate</value>
+                      </record>
+                      <value name="minOccurs">0</value>
+                      <value name="maxOccurs">1</value>
+                      <value name="modelType">simple</value>
+                    </record>
+                  </list>
+                </record>
+              </record>
+              <value name="form">true</value>
+              <value name="internalType">instance</value>
+            </record>
+          </list>
+          <list name="attributes">
+          </list>
+          <record name="contentModel" javaclass="com.wm.util.Values">
+            <record name="symbol" javaclass="com.wm.util.Values">
+              <value name="ncName">$$SEQUENCE</value>
+            </record>
+            <value name="minOccurs">1</value>
+            <value name="maxOccurs">1</value>
+            <value name="modelType">sequence</value>
+            <list name="children">
+              <record javaclass="com.wm.util.Values">
+                <record name="symbol" javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                  <value name="ncName">item</value>
+                </record>
+                <value name="minOccurs">0</value>
+                <value name="maxOccurs">*</value>
+                <value name="modelType">simple</value>
+              </record>
+            </list>
+          </record>
+          <array name="parent-ancestors" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">anyType</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+              <value name="ncName">Items</value>
+            </record>
+          </array>
+          <value name="classname">com.wm.lang.schema.WmComplexType</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="contentType">2</value>
+          <value name="internalType">instance</value>
+          <value name="name">USAddress</value>
+          <list name="elements">
+            <record javaclass="com.wm.util.Values">
+              <value name="tagType">element</value>
+              <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+              <value name="name">name</value>
+              <record name="type" javaclass="com.wm.util.Values">
+                <value name="contentType">1</value>
+                <value name="internalType">reference</value>
+                <value name="dataTypeVersion">dtVersion2</value>
+                <array name="targetNames" type="record" depth="1">
+                  <record javaclass="com.wm.util.Values">
+                    <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                    <value name="ncName">string</value>
+                  </record>
+                </array>
+              </record>
+              <value name="form">true</value>
+              <value name="internalType">instance</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="tagType">element</value>
+              <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+              <value name="name">street</value>
+              <record name="type" javaclass="com.wm.util.Values">
+                <value name="contentType">1</value>
+                <value name="internalType">reference</value>
+                <value name="dataTypeVersion">dtVersion2</value>
+                <array name="targetNames" type="record" depth="1">
+                  <record javaclass="com.wm.util.Values">
+                    <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                    <value name="ncName">string</value>
+                  </record>
+                </array>
+              </record>
+              <value name="form">true</value>
+              <value name="internalType">instance</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="tagType">element</value>
+              <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+              <value name="name">city</value>
+              <record name="type" javaclass="com.wm.util.Values">
+                <value name="contentType">1</value>
+                <value name="internalType">reference</value>
+                <value name="dataTypeVersion">dtVersion2</value>
+                <array name="targetNames" type="record" depth="1">
+                  <record javaclass="com.wm.util.Values">
+                    <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                    <value name="ncName">string</value>
+                  </record>
+                </array>
+              </record>
+              <value name="form">true</value>
+              <value name="internalType">instance</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="tagType">element</value>
+              <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+              <value name="name">state</value>
+              <record name="type" javaclass="com.wm.util.Values">
+                <value name="contentType">1</value>
+                <value name="internalType">reference</value>
+                <value name="dataTypeVersion">dtVersion2</value>
+                <array name="targetNames" type="record" depth="1">
+                  <record javaclass="com.wm.util.Values">
+                    <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                    <value name="ncName">string</value>
+                  </record>
+                </array>
+              </record>
+              <value name="form">true</value>
+              <value name="internalType">instance</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="tagType">element</value>
+              <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+              <value name="name">zip</value>
+              <record name="type" javaclass="com.wm.util.Values">
+                <value name="contentType">1</value>
+                <value name="internalType">reference</value>
+                <value name="dataTypeVersion">dtVersion2</value>
+                <array name="targetNames" type="record" depth="1">
+                  <record javaclass="com.wm.util.Values">
+                    <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                    <value name="ncName">decimal</value>
+                  </record>
+                </array>
+              </record>
+              <value name="form">true</value>
+              <value name="internalType">instance</value>
+            </record>
+          </list>
+          <list name="attributes">
+            <record javaclass="com.wm.util.Values">
+              <value name="tagType">attribute</value>
+              <value name="name">country</value>
+              <record name="type" javaclass="com.wm.util.Values">
+                <value name="contentType">1</value>
+                <value name="internalType">reference</value>
+                <value name="dataTypeVersion">dtVersion2</value>
+                <array name="targetNames" type="record" depth="1">
+                  <record javaclass="com.wm.util.Values">
+                    <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                    <value name="ncName">NMTOKEN</value>
+                  </record>
+                </array>
+              </record>
+              <value name="fixed">US</value>
+              <value name="required">false</value>
+              <value name="internalType">instance</value>
+            </record>
+          </list>
+          <record name="contentModel" javaclass="com.wm.util.Values">
+            <record name="symbol" javaclass="com.wm.util.Values">
+              <value name="ncName">$$SEQUENCE</value>
+            </record>
+            <value name="minOccurs">1</value>
+            <value name="maxOccurs">1</value>
+            <value name="modelType">sequence</value>
+            <list name="children">
+              <record javaclass="com.wm.util.Values">
+                <record name="symbol" javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                  <value name="ncName">name</value>
+                </record>
+                <value name="minOccurs">1</value>
+                <value name="maxOccurs">1</value>
+                <value name="modelType">simple</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <record name="symbol" javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                  <value name="ncName">street</value>
+                </record>
+                <value name="minOccurs">1</value>
+                <value name="maxOccurs">1</value>
+                <value name="modelType">simple</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <record name="symbol" javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                  <value name="ncName">city</value>
+                </record>
+                <value name="minOccurs">1</value>
+                <value name="maxOccurs">1</value>
+                <value name="modelType">simple</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <record name="symbol" javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                  <value name="ncName">state</value>
+                </record>
+                <value name="minOccurs">1</value>
+                <value name="maxOccurs">1</value>
+                <value name="modelType">simple</value>
+              </record>
+              <record javaclass="com.wm.util.Values">
+                <record name="symbol" javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+                  <value name="ncName">zip</value>
+                </record>
+                <value name="minOccurs">1</value>
+                <value name="maxOccurs">1</value>
+                <value name="modelType">simple</value>
+              </record>
+            </list>
+          </record>
+          <array name="parent-ancestors" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">anyType</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://tempuri.org/PurchaseOrderSchema.xsd</value>
+              <value name="ncName">USAddress</value>
+            </record>
+          </array>
+          <value name="classname">com.wm.lang.schema.WmComplexType</value>
+        </record>
+      </list>
+    </record>
+    <record name="uriReferencePrefixPairs" javaclass="com.wm.util.Values">
+      <value name="http://www.w3.org/2001/XMLSchema">xsd</value>
+      <value name="http://tempuri.org/PurchaseOrderSchema.xsd">tns</value>
+    </record>
+    <value name="originURI">file:///C:\Users\viksh\Downloads\purchaseOrder.xsd</value>
+    <value name="modifiable">false</value>
+  </record>
+</Values>
