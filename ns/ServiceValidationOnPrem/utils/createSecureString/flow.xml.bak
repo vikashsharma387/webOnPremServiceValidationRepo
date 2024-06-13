@@ -141,8 +141,4 @@
 </MAPSET>
 </MAP>
 </INVOKE>
-
-<INVOKE TIMEOUT="" SERVICE="pub.security.util:destroySecureString" VALIDATE-IN="$none" VALIDATE-OUT="$none">
-  <COMMENT></COMMENT>
-</INVOKE>
 </FLOW>
