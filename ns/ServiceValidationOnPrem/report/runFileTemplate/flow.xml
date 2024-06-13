@@ -367,9 +367,6 @@
 </Values>
 </DATA>
 </MAPSET>
-
-<MAPCOPY FROM="/body;2;0" TO="/$values;2;0">
-</MAPCOPY>
 </MAP>
 </INVOKE>
 
