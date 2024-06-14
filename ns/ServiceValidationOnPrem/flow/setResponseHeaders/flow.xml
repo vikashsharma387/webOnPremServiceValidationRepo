@@ -94,7 +94,7 @@
 <Values version="2.0">
   <array name="xml" type="record" depth="1">
     <record javaclass="com.wm.util.Values">
-      <value name="fieldName">Content-Type</value>
+      <value name="fieldName">ContentType</value>
       <value name="fieldValue">application/json</value>
     </record>
     <record javaclass="com.wm.util.Values">
