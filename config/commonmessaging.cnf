@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <array name="CommonMessagingConfiguration" type="record" depth="1">
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="name">MQ_TT_Demo</value>
+        <value name="type">MQTT3</value>
+        <value name="type_display">MQTT 3.1.1</value>
+        <value name="description">MQ_TT_Demo</value>
+        <value name="clientId">ISdcabea00_2d37_11ef_ac42_000000000001</value>
+        <value name="version">MQTT3</value>
+        <value name="package">ServiceValidationOnPrem</value>
+        <value name="useCsq">false</value>
+        <value name="csqSize">-1</value>
+        <value name="enabled">true</value>
+        <value name="clientAuthType">BASIC</value>
+        <value name="user">Administrator</value>
+        <value name="password">*****</value>
+        <value name="useSSL">No</value>
+        <value name="host">tcp://localhost:1883</value>
+        <jboolean name="cleanSessionEnabled">true</jboolean>
+        <number name="timeout" type="java.lang.Integer">30</number>
+        <number name="keepAlive" type="java.lang.Integer">60</number>
+        <jboolean name="will_enabled">false</jboolean>
+        <jboolean name="will_retain">false</jboolean>
+        <value name="will_payload"></value>
+        <value name="will_onConnectPayload"></value>
+        <value name="will_onDisconnectPayload"></value>
+      </record>
+    </array>
+  </record>
+</IDataXMLCoder>
