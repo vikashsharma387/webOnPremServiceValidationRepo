@@ -26,6 +26,34 @@ public final class JavaService
 
 
 
+	public static final void ConcatStrings (IData pipeline)
+        throws ServiceException
+	{
+		// --- <<IS-START(ConcatStrings)>> ---
+		// @sigtype java 3.5
+		// [i] field:0:required string1
+		// [i] field:0:required string2
+		// [o] field:0:required response
+		// pipeline
+		IDataCursor pipelineCursor = pipeline.getCursor();
+			String	string1 = IDataUtil.getString( pipelineCursor, "string1" );
+			String	string2 = IDataUtil.getString( pipelineCursor, "string2" );
+		pipelineCursor.destroy();
+		
+		String response = string1.concat(string2);
+		
+		// pipeline
+		IDataCursor pipelineCursor_1 = pipeline.getCursor();
+		IDataUtil.put( pipelineCursor_1, "response", response);
+		pipelineCursor_1.destroy();
+			
+		// --- <<IS-END>> ---
+
+                
+	}
+
+
+
 	public static final void SampleJavaService (IData pipeline)
         throws ServiceException
 	{
